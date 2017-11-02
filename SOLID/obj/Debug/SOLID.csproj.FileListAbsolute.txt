@@ -1,0 +1,7 @@
+C:\Users\CRISTINA\source\repos\SOLID\SOLID\bin\Debug\SOLID.exe.config
+C:\Users\CRISTINA\source\repos\SOLID\SOLID\bin\Debug\SOLID.exe
+C:\Users\CRISTINA\source\repos\SOLID\SOLID\bin\Debug\SOLID.pdb
+C:\Users\CRISTINA\source\repos\SOLID\SOLID\obj\Debug\SOLID.csprojResolveAssemblyReference.cache
+C:\Users\CRISTINA\source\repos\SOLID\SOLID\obj\Debug\SOLID.csproj.CoreCompileInputs.cache
+C:\Users\CRISTINA\source\repos\SOLID\SOLID\obj\Debug\SOLID.exe
+C:\Users\CRISTINA\source\repos\SOLID\SOLID\obj\Debug\SOLID.pdb

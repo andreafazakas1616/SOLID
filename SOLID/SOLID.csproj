@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D63AA89-CA66-49F0-8731-9B1021ED6643}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SOLID</RootNamespace>
+    <AssemblyName>SOLID</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DependencyInversion\Right\EnemyRepository.cs" />
+    <Compile Include="DependencyInversion\Right\FightService.cs" />
+    <Compile Include="DependencyInversion\Right\IEnemyRepository.cs" />
+    <Compile Include="DependencyInversion\Wrong\EnemyRepository.cs" />
+    <Compile Include="DependencyInversion\Wrong\FightService.cs" />
+    <Compile Include="DRY\Class1.cs" />
+    <Compile Include="DRY\Class2.cs" />
+    <Compile Include="DRY\Class3.cs" />
+    <Compile Include="DRY\Class4.cs" />
+    <Compile Include="InterfaceSegregation\Right\Machine.cs" />
+    <Compile Include="InterfaceSegregation\Wrong\Item.cs" />
+    <Compile Include="InterfaceSegregation\Wrong\Machine.cs" />
+    <Compile Include="Liskov\Right\CalculateSquareRectangle2.cs" />
+    <Compile Include="Liskov\Wrong\CalculateSquareRectangle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleOpenClosed\Right\AreaCalculator.cs" />
+    <Compile Include="SingleOpenClosed\Right\Circle.cs" />
+    <Compile Include="SingleOpenClosed\Right\IAreaCalculator.cs" />
+    <Compile Include="SingleOpenClosed\Right\IShape.cs" />
+    <Compile Include="SingleOpenClosed\Right\Square.cs" />
+    <Compile Include="SingleOpenClosed\Wrong\Shape.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
